@@ -1,0 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/badaboom-bb');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'BadaBoom BB', sans-serif;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f61;
+}
+
+#heroSection {
+    font-family: 'BadaBoom BB', sans-serif;
+    color: white;
+    background: url('../img/allheroes.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+#heroSection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+

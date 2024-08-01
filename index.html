@@ -18,7 +18,8 @@
 <body>
     <!-- header -->
     <header id="header" class="text-center">
-        <img src="assets/img/sh2.jpg" alt="Click al logo de SuperHero para volver al inicio" class="mx-2" width="250">
+        <img src="assets/img/sh2.jpg" alt="Click al logo de SuperHero para volver al inicio" class="mx-2 img-fluid"
+            width="250">
     </header>
 
     <!-- navbar -->
@@ -31,28 +32,48 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item text-uppercase fw-medium">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <li class="nav-item text-uppercase fs-5">
+                        <a class="nav-link active" aria-current="page" href="#heroSection">Inicio</a>
                     </li>
-                    <li class="nav-item text-uppercase fw-medium">
+                    <li class="nav-item text-uppercase fs-5">
                         <a class="nav-link" href="#buscadorApi">Buscador API</a>
-                    </li>
-                    <li class="nav-item text-uppercase fw-medium">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item text-uppercase fw-medium">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- main section -->
-    <section id="mainSection">
-        <h1 class="text-center">SuperHero</h1>
-
+    <!-- hero section -->
+    <section id="heroSection" class="d-flex align-items-center vh-100">
+        <div class="overlay z-1"></div>
+        <div class="container text-center text-white z-2">
+            <h1 class="display-1">Welcome to SuperHero World</h1>
+            <p class="display-6">Descubre al SuperHeroe o SuperHeroina que llevas dentro!</p>
+            <img src="assets/img/sh1.jpg" alt="" class="img-fluid w-25">
+        </div>
     </section>
+
+    <!-- buscador api -->
+    <main>
+        <section id="buscadorApi" class="vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="display-6">Buscador API</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ingresa el número del SuperHero a
+                                    buscar: </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
