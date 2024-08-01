@@ -33,3 +33,7 @@ body {
 #buscadorApi {
     background-color: #F0F0F0;
 }
+
+#resultadoTitle {
+    display: none;
+}
