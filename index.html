@@ -49,25 +49,26 @@
         <div class="container text-center text-white z-2">
             <h1 class="display-1">Welcome to SuperHero World</h1>
             <p class="display-6">Descubre al SuperHeroe o SuperHeroina que llevas dentro!</p>
-            <img src="assets/img/sh1.jpg" alt="" class="img-fluid w-25">
         </div>
     </section>
 
     <!-- buscador api -->
     <main>
-        <section id="buscadorApi" class="vh-100">
+        <section id="buscadorApi" class="d-flex align-items-center vh-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="display-6">Buscador API</h2>
+                        <img src="assets/img/sh1.jpg" alt="" class="img-fluid rounded-circle">
+                        <h2 class="my-3 display-3">Buscador API</h2>
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Ingresa el número del SuperHero a
+                                <label for="inputHeroe" class="form-label">Ingresa el número del SuperHero a
                                     buscar: </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <!-- input tipo numerico mayores a cero -->
+                                <input type="number" min="0" class="form-control" id="inputHeroe"
+                                    aria-describedby="inputHeroe">
                             </div>
-                            <button type="submit" class="btn btn-primary">Buscar</button>
+                            <button type="submit" class="btn btn-danger">Buscar</button>
                         </form>
                     </div>
                 </div>
