@@ -16,35 +16,43 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <header id="topNavBar">
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="assets/img/sh2.jpg"
-                        alt="Click al logo de SuperHero para volver al inicio" width="50" class="mx-2">SuperHero</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#buscadorApi">Buscador API</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!-- header -->
+    <header id="header" class="text-center">
+        <img src="assets/img/sh2.jpg" alt="Click al logo de SuperHero para volver al inicio" class="mx-2" width="250">
     </header>
+
+    <!-- navbar -->
+    <nav id="topNavBar" class="navbar navbar-expand-lg" style="background-color: #D0222C;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item text-uppercase fw-medium">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item text-uppercase fw-medium">
+                        <a class="nav-link" href="#buscadorApi">Buscador API</a>
+                    </li>
+                    <li class="nav-item text-uppercase fw-medium">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item text-uppercase fw-medium">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section id="mainSection">
+        <h1 class="text-center">SuperHero</h1>
+
+    </section>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
