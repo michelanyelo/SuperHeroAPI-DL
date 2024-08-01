@@ -37,3 +37,7 @@ body {
 #resultadoTitle {
     display: none;
 }
+
+.canvasjs-chart-canvas {
+    border-radius: 0.375rem;
+}
