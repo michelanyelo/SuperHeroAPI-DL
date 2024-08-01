@@ -2,12 +2,23 @@ $(document).ready(function () {
     $("#btnHeroe").click(function (e) {
         e.preventDefault();
         let numHeroe = getHeroeID();
-        fetchHeroeData(numHeroe);
+        if (numHeroe !== null) {
+            fetchHeroeData(numHeroe);
+        } else {
+            alert("Reintenta con un dígito numérico por favor")
+        }
     });
 });
 
+// validacion numérico
 function getHeroeID() {
-    return $("#inputHeroe").val();
+    const regex = /^\d+$/;
+    let numHeroe = $("#inputHeroe").val();
+    if (regex.test(numHeroe)) {
+        return numHeroe;
+    } else {
+        return null;
+    }
 }
 
 function fetchHeroeData(numHeroe) {
