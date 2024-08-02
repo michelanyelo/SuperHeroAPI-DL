@@ -38,6 +38,11 @@ body {
     display: none;
 }
 
-.canvasjs-chart-canvas {
+.canvasjs-chart-canvas,
+.yamcha {
     border-radius: 0.375rem;
+}
+
+.yamcha {
+    box-shadow: 8px 9px 0px 3px #CF212B;
 }

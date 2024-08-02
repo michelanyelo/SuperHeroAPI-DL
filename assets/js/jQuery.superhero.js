@@ -9,10 +9,23 @@ jQuery.fn.superhero = function (token, idHeroe) {
         "method": "GET",
     };
 
-    $.ajax(settings).done(function (response) {
-        renderHeroeCard(element, response);
-        renderChart(response);
-    });
+    $.ajax(settings)
+        .done(function (response) {
+            // Validar que la respuesta contiene los datos necesarios
+            if (!response || response.response === "error" || !response.name) {
+                alert("Superhéroe no encontrado. Verifica el ID e intenta nuevamente.");
+                $('#resultadoHero').html(''); // Limpiar el área de resultados
+                $('#chartContainer').html(''); // Limpiar el área del gráfico
+            } else {
+                renderHeroeCard(element, response);
+                renderChart(response);
+            }
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            // Manejo de errores en la solicitud AJAX
+            alert("Hubo un problema al realizar la búsqueda. Por favor, intenta nuevamente más tarde.");
+            console.error("Error en la solicitud AJAX:", textStatus, errorThrown);
+        });;
 
     return this;
 }
@@ -68,7 +81,7 @@ function renderChart(response) {
     if (chartData.length === 0) {
         // Mostrar mensaje e imagen si no hay datos
         $("#chartContainer").html(`
-            <p class='text-danger fw-bold'>Este héroe no tiene poderes registrados :(</p>
+            <p class='text-danger fw-bold'>Tu héroe o heroína es un simple mortal :(</p>
             <img class='img-fluid w-75 yamcha' src='assets/img/yamcha.jpg' alt='Imagen de Yamcha'>
         `);
     } else {
