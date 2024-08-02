@@ -1,4 +1,4 @@
-# 👋 Bienvenida/o al Proyecto SuperHero API
+# 👋 Bienvenida/o al Proyecto SuperHero API 🦸‍♂️
 
 ## 📝 Descripción
 Este proyecto es parte del módulo "Fundamentos de programación en JavaScript" del BootCamp Desarrollo de aplicaciones Front End Trainee de DesafíoLatam. El objetivo fue validar los conocimientos
