@@ -51,7 +51,7 @@ function renderHeroeCard(element, response) {
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">${response.name} <small class="text-body-secondary"> ${response.biography['publisher']} </small></h5>
+                        <h5 class="card-title">${response.name} <small class="text-body-secondary"> │ ${response.biography['publisher']} </small></h5>
                         ${heroAttributes.map(attr => `
                             <p class="card-text">${attr.label}: ${attr.value}</p>
                         `).join('')}

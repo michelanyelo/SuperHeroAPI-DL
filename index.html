@@ -19,13 +19,13 @@
 
 <body>
     <!-- header -->
-    <header id="header" class="text-center">
-        <img src="assets/img/sh2.jpg" alt="Click al logo de SuperHero para volver al inicio" class="mx-2 img-fluid"
+    <header id="header" class="text-center mt-5">
+        <img src="assets/img/sh2.jpg" alt="Click al logo de SuperHero para volver al inicio" class="mx-2 mt-3 img-fluid"
             width="250">
     </header>
 
     <!-- navbar -->
-    <nav id="topNavBar" class="navbar navbar-expand-lg" style="background-color: #D0222C;" data-bs-theme="dark">
+    <nav id="topNavBar" class="navbar navbar-expand-lg fixed-top" style="background-color: #D0222C;" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item text-uppercase fs-5">
-                        <a class="nav-link active" aria-current="page" href="#heroSection">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item text-uppercase fs-5">
                         <a class="nav-link" href="#buscadorApi">Buscador API</a>
@@ -64,7 +64,7 @@
                         <h2 class="my-3 display-3">Buscador API</h2>
                         <form method="post">
                             <div class="mb-3">
-                                <label for="inputHeroe" class="form-label">Ingresa el número del SuperHero a
+                                <label for="inputHeroe" class="form-label display-6">Ingresa el número del SuperHero a
                                     buscar: </label>
                                 <input class="form-control" id="inputHeroe" aria-describedby="inputHeroe">
                             </div>
